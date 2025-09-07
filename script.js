@@ -66,3 +66,19 @@ const showPlantByCategory = (plants) => {
 
 loadCategory();
 
+const loadAllCategorys = () => {
+  fetch("https://openapi.programming-hero.com/api/plants")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data.plants);
+      
+    })
+   
+};
+const showAllCategor = (el) => {
+  planContainer.innerHTML += `
+       
+        `;
+};
+
+loadAllCategorys()
