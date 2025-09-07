@@ -104,14 +104,39 @@
         <img src="./assets/hero-leaf2.png" alt="" />
       </div>
     </header>
-    <section>
+    <section class="mt-[100px]">
+      <h1 class="font-bold text-4xl text-center">Choose Your Trees</h1>
+      <div
+        class="md:grid md:grid-cols-5 gap-6 max-w-7xl mx-auto mt-[40px] space-y-5 md:space-y-0"
+      >
+        <div class="col-span-1 p-3">
+          <h1 class="font-semibold text-2xl">Categories</h1>
+          <div class="mt-3">
+            <ul id="categoryContainer" class="space-y-2">
+              <li
+                class="cursor-pointer w-full hover:bg-[#2ea754] p-2 rounded-lg hover:transition duration-500 hover:text-white"
+              >
+                All Trees
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex col-span-3 border-1">
+          <h1>jisan</h1>
+          <h1>jisan</h1>
+          <h1>jisan</h1>
+        </div>
+        <div class="col-span-1 bg-white rounded-2xl p-5">
+          <h1 class="font-semibold text-2xl">Your Cart</h1>
+        </div>
+      </div>
     </section>
     <section class="w-7/12 mx-auto mt-24 space-y-8">
       <h1 class="font-bold text-2xl md:text-3xl text-center">
         About the Campaign
       </h1>
       <div class="md:flex gap-6 items-center space-y-4 md:space-y-0">
-        <img src="./assets/about.png" alt="" />
+        <img class="shadow-lg rounded-lg" src="./assets/about.png" alt="" />
         <div class="text-gray-600">
           <p>
             Green Earth is a global tree plantation initiative dedicated to
@@ -132,13 +157,17 @@
       <div
         class="gap-10 mt-10 justify-center flex flex-col md:flex-row items-center"
       >
-        <div class="card card-dash bg-base-100 w-96">
+        <div
+          class="card card-dash bg-base-100 w-96 shadow-lg hover:bg-[#c0ebd0] hover:duration-300 hover:transition hover:translate-1"
+        >
           <div class="card-body">
             <h2 class="text-3xl font-bold text-[#15803D] text-center">500K+</h2>
             <p class="text-gray-600 text-center text-[17px]">Trees Planted</p>
           </div>
         </div>
-        <div class="card card-dash bg-base-100 w-96">
+        <div
+          class="card card-dash bg-base-100 w-96 shadow-lg hover:bg-[#c0ebd0] hover:duration-300 hover:transition hover:translate-1"
+        >
           <div class="card-body">
             <h2 class="text-3xl font-bold text-[#15803D] text-center">120+</h2>
             <p class="text-gray-600 text-center text-[17px]">
@@ -146,7 +175,9 @@
             </p>
           </div>
         </div>
-        <div class="card card-dash bg-base-100 w-96">
+        <div
+          class="card card-dash bg-base-100 w-96 shadow-lg hover:bg-[#c0ebd0] hover:duration-300 hover:transition hover:translate-1"
+        >
           <div class="card-body">
             <h2 class="text-3xl font-bold text-[#15803D] text-center">30+</h2>
             <p class="text-gray-600 text-center text-[17px]">
@@ -159,8 +190,14 @@
     <footer>
       <div class="bg-[#166534] p-20 space-y-10">
         <h1 class="text-center text-white text-3xl">Plant a Tree Today</h1>
-        <div class="flex flex-col justify-center items-center space-y-5 bg-[#15803D] shadow-lg rounded-xl p-6 md:w-[500px]  mx-auto">
-          <input type="text" placeholder="Your Name" class="input  md:w-[420px]" />
+        <div
+          class="flex flex-col justify-center items-center space-y-5 bg-[#15803D] shadow-lg rounded-xl p-6 md:w-[500px] mx-auto"
+        >
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="input md:w-[420px]"
+          />
           <input
             type="email"
             placeholder="Your Email Address"
@@ -171,7 +208,7 @@
             <div
               tabindex="0"
               role="button"
-              class="btn w-[218px]  md:w-[420px] flex justify-between"
+              class="btn w-[218px] md:w-[420px] flex justify-between"
             >
               Number of Trees <i class="fa-solid fa-angle-down"></i>
             </div>
@@ -185,7 +222,9 @@
               <li class="font-medium"><a>10 Tree - $50</a></li>
             </ul>
           </div>
-          <button class="btn btn-warning rounded-full text-[#15803D] md:w-[420px] w-[218px]">
+          <button
+            class="btn btn-warning rounded-full text-[#15803D] md:w-[420px] w-[218px]"
+          >
             Donate Now
           </button>
         </div>
