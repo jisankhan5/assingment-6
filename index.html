@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Green Earth</title>
+    <!-- font awosome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- favicon  -->
     <link
       rel="shortcut icon"
@@ -120,7 +128,9 @@
     </section>
     <section class="bg-[#CFF0DC] mt-24 p-20">
       <h1 class="text-center font-bold text-3xl">Our Impact</h1>
-      <div class="  gap-10 mt-10 justify-center flex flex-col md:flex-row items-center">
+      <div
+        class="gap-10 mt-10 justify-center flex flex-col md:flex-row items-center"
+      >
         <div class="card card-dash bg-base-100 w-96">
           <div class="card-body">
             <h2 class="text-3xl font-bold text-[#15803D] text-center">500K+</h2>
@@ -130,16 +140,60 @@
         <div class="card card-dash bg-base-100 w-96">
           <div class="card-body">
             <h2 class="text-3xl font-bold text-[#15803D] text-center">120+</h2>
-            <p class="text-gray-600 text-center text-[17px]">Communities Involved</p>
+            <p class="text-gray-600 text-center text-[17px]">
+              Communities Involved
+            </p>
           </div>
         </div>
         <div class="card card-dash bg-base-100 w-96">
           <div class="card-body">
             <h2 class="text-3xl font-bold text-[#15803D] text-center">30+</h2>
-            <p class="text-gray-600 text-center text-[17px]">Countries Reached</p>
+            <p class="text-gray-600 text-center text-[17px]">
+              Countries Reached
+            </p>
           </div>
         </div>
       </div>
     </section>
+    <footer>
+      <div class="bg-[#166534] p-20 space-y-10">
+        <h1 class="text-center text-white text-3xl">Plant a Tree Today</h1>
+        <div class="flex flex-col justify-center items-center space-y-5 bg-[#15803D] shadow-lg rounded-xl p-6 md:w-[500px]  mx-auto">
+          <input type="text" placeholder="Your Name" class="input  md:w-[420px]" />
+          <input
+            type="email"
+            placeholder="Your Email Address"
+            class="input md:w-[420px]"
+          />
+
+          <div class="dropdown dropdown-end">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn w-[218px]  md:w-[420px] flex justify-between"
+            >
+              Number of Trees <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+            >
+              <li class="font-semibold"><a>Number of Trees</a></li>
+              <li class="font-medium"><a>1 Tree - $5</a></li>
+              <li class="font-medium"><a>5 Tree - $25</a></li>
+              <li class="font-medium"><a>10 Tree - $50</a></li>
+            </ul>
+          </div>
+          <button class="btn btn-warning rounded-full text-[#15803D] md:w-[420px] w-[218px]">
+            Donate Now
+          </button>
+        </div>
+      </div>
+      <div class="bg-[#14532D] p-5">
+        <p class="text-center text-white">
+          © 2025 Green Earth. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
