@@ -54,7 +54,7 @@ const showPlantByCategory = (plants) => {
   planContainer.innerHTML = "";
   plants.forEach((plant) => {
     planContainer.innerHTML += `
-    <div class="bg-white shadow-lg hover:transition hover:translate-2 duration-300  space-y-3 p-4 rounded-lg h-[530px]">
+    <div class="bg-white shadow-lg hover:transition hover:translate-2 duration-300  space-y-3 p-4 rounded-lg h-[550px]">
     <img class="rounded-lg h-[250px] w-full" src="${plant.image}">
       <div id="plant-${plant.id}" class="space-y-3">
          <h1  onclick="plantdetails(${plant.id})" class=" font-semibold text-lg cursor-pointer">${plant.name}</h1>
@@ -85,7 +85,7 @@ const showAllCategor = (cardAll) => {
   planContainer.innerHTML = "";
   cardAll.forEach((card) => {
     planContainer.innerHTML += `
-       <div class="bg-white shadow-lg hover:transition hover:translate-2 duration-300  space-y-3 p-4 rounded-lg h-[530px]">
+       <div class="bg-white shadow-lg hover:transition hover:translate-2 duration-300  space-y-3 p-4 rounded-lg h-[550px]">
     <img class="rounded-lg h-[250px] w-full" src="${card.image}">
      <div id="plant-${card.id}" class="space-y-3">
            <h1  onclick="plantdetails(${card.id})" class=" w-[135px] font-semibold text-lg cursor-pointer">${card.name}</h1>
