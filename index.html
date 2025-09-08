@@ -118,9 +118,18 @@
         <div
           class="gap-8 md:grid grid-cols-3 space-y-5 md:space-y-0 col-span-3"
           id="planContainer"
-        ></div>
+        >
+          <div class="flex justify-center col-span-full">
+            <span class="loading loading-dots loading-xl"></span>
+          </div>
+        </div>
         <div class="col-span-1 bg-white rounded-2xl p-5">
           <h1 class="font-semibold text-2xl">Your Cart</h1>
+          <div id="history"></div> 
+          <div class=" border-t-2 border-gray-100 flex justify-between items-center font-medium text-xl text-gray-800 mt-2">
+             <h2>Total:</h2>
+             <p><i class="fa-solid fa-bangladeshi-taka-sign"></i><span id="mainPrice">0</span></p>
+          </div>
         </div>
       </div>
     </section>
@@ -129,7 +138,7 @@
         About the Campaign
       </h1>
       <div class="md:flex gap-6 items-center space-y-4 md:space-y-0">
-        <img class="shadow-lg rounded-lg" src="./assets/about.png" alt="" />
+        <img class="shadow-lg rounded-lg hover:translate-3 hover:transition duration-300" src="./assets/about.png" alt="" />
         <div class="text-gray-600">
           <p>
             Green Earth is a global tree plantation initiative dedicated to
@@ -181,10 +190,10 @@
       </div>
     </section>
     <footer>
-      <div class="bg-[#166534] p-20 space-y-10">
+      <div class="bg-[#166534] p-20 space-y-10 ">
         <h1 class="text-center text-white text-3xl">Plant a Tree Today</h1>
         <div
-          class="flex flex-col justify-center items-center space-y-5 bg-[#15803D] shadow-lg rounded-xl p-6 md:w-[500px] mx-auto"
+          class="flex flex-col justify-center items-center space-y-5 bg-[#15803D] shadow-lg rounded-xl p-6 md:w-[500px] mx-auto "
         >
           <input
             type="text"
@@ -207,7 +216,7 @@
             </div>
             <ul
               tabindex="0"
-              class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+              class="dropdown-content menu bg-base-100 rounded-box z-1 w-full  shadow-sm"
             >
               <li class="font-semibold"><a>Number of Trees</a></li>
               <li class="font-medium"><a>1 Tree - $5</a></li>
@@ -216,7 +225,7 @@
             </ul>
           </div>
           <button
-            class="btn btn-warning rounded-full text-[#15803D] md:w-[420px] w-[218px]"
+            class="btn btn-warning rounded-full text-[#15803D] md:w-[420px] w-full"
           >
             Donate Now
           </button>
