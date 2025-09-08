@@ -154,7 +154,7 @@ const showCart = (cartPlants) => {
     plantCart.innerHTML = "";
     history.innerHTML += `
             
-           <div class="bg-[#F0FDF4] flex justify-between items-center rounded-lg p-3 my-3 ">
+           <div class="bg-[#F0FDF4] flex justify-between items-center rounded-lg p-3 my-3 shadow-lg hover:translate-1 duration-300">
             <div>
               <h1 class="font-bold">${plantCart.title}</h1>
              <p class="text-gray-400 "><i class="fa-solid fa-bangladeshi-taka-sign"></i>${plantCart.price} <i  class="fa-solid fa-xmark"></i> 1</p>
